@@ -124,10 +124,21 @@ div.navBottomBar{
 	background-color:$red;
 }
 
+#message{
+	position:relative;
+	top: 4px;
+}
+
 .logo{
 	height: 50px;
 	width:auto;
 	float:left;
+}
+
+.icono{
+	padding-right: 2%;
+	position:relative;
+	top: 14%;
 }
 
 .navTopBar div{
@@ -136,7 +147,12 @@ div.navBottomBar{
 
 .optionsTop{
 	position:relative;
-	top:-13px;
+	top:-21px;
+}
+
+.options{
+	position:relative;
+	top: -26px;
 }
 
 .option{
@@ -168,6 +184,11 @@ div.slider{
 		padding-bottom: 20px;
 		margin: 0 auto;
 	}
+}
+
+#spiderman{
+	height: auto;
+	width: 167%;
 }
 
 /* ------ Buscar ----- */
