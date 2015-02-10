@@ -1,0 +1,355 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/layout";
+@import "compass/css3";
+
+@font-face {
+    font-family: VTC Letterer Pro Regular;
+    src: url(../fonts/VTC_letterer_pro.ttf);
+}
+
+@font-face{
+	font-family: BentonSans;
+	src:url(../fonts/benton-sans-extra-comp-black.ttf);
+}
+
+$red: #ed1b24;
+$yellow:#fdf101;
+
+/* ---- Global ----- */
+
+body{
+	background-color:white;
+	padding:0 15px;
+	font-family: 'VTC Letterer Pro Regular';
+	font-size:1.5em;
+}
+
+
+.bodyContainer{
+	width: 100%;
+}
+
+/*div{
+	@include border-radius(2px);
+	height: 30px;
+}*/
+
+input{
+	border: 3px solid $yellow;
+	@include border-radius(5px);
+	height: 25px;
+}
+
+/* ----- grid ------*/
+
+.grid-container{
+	width: 100%;
+	max-width:2400px;
+}
+
+.grid-container*{
+	box-sizing:border-box;
+}
+
+/* --- clearfix --- */
+.row:before,
+.row:after{
+	content: "";
+	display:table;
+	clear:both;
+}
+
+[class*='col-']{
+	float:left;
+	min-height: 1px;
+	width:20%;
+	/*--gutter--*/
+	padding: 0;
+}
+
+.col-1{width:20%;}
+.col-2{width:40%;}
+.col-3{width:60%;}
+.col-4{width:80%;}
+.col-5{width:100%;}
+
+
+/*------responsive-----*/
+
+@media all and (max-width:800px){
+	.col-1{width:33.33%;}
+	.col-2{width:66.67%;}
+	.col-3{width:100%;}
+}
+
+@media all and (max-width: 650px){
+	.col-1{width:50%;}
+	.col-2,
+	.col-3,
+	.col-4,
+	.col-5{width:100%;}
+}
+
+/*----- Header ----- */
+
+.search{
+	position:relative;
+	clear:left;
+	height:30px;
+	float:right;
+}
+
+div.navTopBar,
+div.navBottomBar{
+	height:50px;
+	width:auto;
+	li{
+		display: inline-block;
+		float:right;
+		padding: 0 2%;
+	}
+}
+
+.navTopBar{
+	background-image: url('../images/header.png');
+	background-size:100%;
+}
+
+.navBottomBar{
+	background-color:$red;
+}
+
+.logo{
+	height: 50px;
+	width:auto;
+	float:left;
+}
+
+.navTopBar div{
+	float:right;
+}
+
+.optionsTop{
+	position:relative;
+	top:-13px;
+}
+
+.option{
+	display:inline-block;
+	height: 50px;
+	width: 20%;
+	color:#ffffff;
+	text-align:center;
+	margin:0;
+	float:left;
+	@inlude border-radius(2px);
+}
+
+/* ------ Body ----- */
+.bodyContainer{
+	padding: 20px 0;
+}
+
+/*------ Slider ----- */
+
+
+div.slider{
+	height:500px;
+	width: 65%;
+	float:left;
+	.heroBig{
+		height: auto;
+		width: 100%;
+		padding-bottom: 20px;
+		margin: 0 auto;
+	}
+}
+
+/* ------ Buscar ----- */
+
+div.busqueda{
+	height: 700px;
+	width: 35%;
+	background-color:$red;
+	float:right;
+	position:relative;
+	clear:right;
+	color:white;
+
+}
+
+.title{
+	text-align:center;
+	padding-top: 10%;
+}
+
+h2{
+	font-size: 10vh;
+	font-family: BentonSans;
+	color:white;
+}
+
+div.donde{
+	padding: 5%;
+	label{
+	clear:right;
+}
+}
+
+.origen{
+	padding: 5% 0;
+	input{
+		width: 80%;
+	}
+	label{
+		display:block;
+	}
+}
+
+.destino{
+	@extend .origen;
+}
+
+.extras{
+	padding:0 5% 10% 5%;
+	clear:both;
+
+}
+
+.soloIda{
+	float:left;
+
+}
+
+.flexibilidad{
+	float:right;
+}
+
+.when{
+	padding: 10% 5%;
+	div{
+		display:inline-block;
+		input{
+			width: 50%;
+		}
+		.salida{
+			float:left;
+		}
+		.vuelta{
+			float:right;
+		}
+	}
+}
+
+.moreExtras{
+	text-align:center;
+	div{
+	display:inline-block;
+	clear:both;
+	}
+}
+
+.searchButton{
+	padding: 10%;
+	button{
+		background-color:violet;
+		color:white;
+	}
+}
+
+
+
+/* ------- Other Desinations ------ */
+
+.origenDestino{
+	width: 65%;
+	height: 220px;
+	text-align:center;
+	float:left;
+	padding-bottom: 20px;
+}
+
+.place{
+	background-color:green;
+	display:inline-block;
+	text-align:center;
+	float:left;
+	width: 25%;
+	p{
+		font-family: 'BentonSans';
+		font-size: 10vh;
+	}
+}
+
+#thor{
+	background-image: url('../images/heroes/thor.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#captainamerica{
+	background-image: url('../images/heroes/captainamerica.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#ironman{
+	background-image: url('../images/heroes/ironman.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#wolverine{
+	background-image: url('../images/heroes/wolverine.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.stretch{
+	width:100%;
+	display:inline-block;
+	font-size:0;
+	line-height:0;
+}
+
+
+
+/*----- Empty div ------ */
+
+div.empty{
+	height: 75px;
+	background-color: $red;
+	clear:both;
+}
+
+/*------ Footer ----- */
+
+footer{
+	background-image: url('../images/footer.png');
+	background-size: 100%;
+	height: 100px;
+	clear:both;
+}
+
+.seccions{
+	width: 80%;
+	background-color: #ffffff;
+	opacity: 0.5;
+	text-align:justify;
+}
+
+.seccion{
+	display:inline-block;
+	vertical-align:top;
+	*display: inline;
+	zoom:1;
+	opacity: 4;
+}
+
+
+.socialMedia{
+	float: right;
+}

@@ -1,0 +1,477 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: VTC Letterer Pro Regular;
+  src: url(../fonts/VTC_letterer_pro.ttf);
+}
+@font-face {
+  font-family: BentonSans;
+  src: url(../fonts/benton-sans-extra-comp-black.ttf);
+}
+/* ---- Global ----- */
+/* line 25, ../sass/screen.scss */
+body {
+  background-color: white;
+  padding: 0 15px;
+  font-family: 'VTC Letterer Pro Regular';
+  font-size: 1.5em;
+}
+
+/* line 33, ../sass/screen.scss */
+.bodyContainer {
+  width: 100%;
+}
+
+/*div{
+	@include border-radius(2px);
+	height: 30px;
+}*/
+/* line 42, ../sass/screen.scss */
+input {
+  border: 3px solid #fdf101;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 25px;
+}
+
+/* ----- grid ------*/
+/* line 50, ../sass/screen.scss */
+.grid-container {
+  width: 100%;
+  max-width: 2400px;
+}
+
+/* line 55, ../sass/screen.scss */
+.grid-container* {
+  box-sizing: border-box;
+}
+
+/* --- clearfix --- */
+/* line 60, ../sass/screen.scss */
+.row:before,
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 67, ../sass/screen.scss */
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 20%;
+  /*--gutter--*/
+  padding: 0;
+}
+
+/* line 75, ../sass/screen.scss */
+.col-1 {
+  width: 20%;
+}
+
+/* line 76, ../sass/screen.scss */
+.col-2 {
+  width: 40%;
+}
+
+/* line 77, ../sass/screen.scss */
+.col-3 {
+  width: 60%;
+}
+
+/* line 78, ../sass/screen.scss */
+.col-4 {
+  width: 80%;
+}
+
+/* line 79, ../sass/screen.scss */
+.col-5 {
+  width: 100%;
+}
+
+/*------responsive-----*/
+@media all and (max-width: 800px) {
+  /* line 85, ../sass/screen.scss */
+  .col-1 {
+    width: 33.33%;
+  }
+
+  /* line 86, ../sass/screen.scss */
+  .col-2 {
+    width: 66.67%;
+  }
+
+  /* line 87, ../sass/screen.scss */
+  .col-3 {
+    width: 100%;
+  }
+}
+@media all and (max-width: 650px) {
+  /* line 91, ../sass/screen.scss */
+  .col-1 {
+    width: 50%;
+  }
+
+  /* line 92, ../sass/screen.scss */
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5 {
+    width: 100%;
+  }
+}
+/*----- Header ----- */
+/* line 100, ../sass/screen.scss */
+.search {
+  position: relative;
+  clear: left;
+  height: 30px;
+  float: right;
+}
+
+/* line 107, ../sass/screen.scss */
+div.navTopBar,
+div.navBottomBar {
+  height: 50px;
+  width: auto;
+}
+/* line 111, ../sass/screen.scss */
+div.navTopBar li,
+div.navBottomBar li {
+  display: inline-block;
+  float: right;
+  padding: 0 2%;
+}
+
+/* line 118, ../sass/screen.scss */
+.navTopBar {
+  background-image: url("../images/header.png");
+  background-size: 100%;
+}
+
+/* line 123, ../sass/screen.scss */
+.navBottomBar {
+  background-color: #ed1b24;
+}
+
+/* line 127, ../sass/screen.scss */
+.logo {
+  height: 50px;
+  width: auto;
+  float: left;
+}
+
+/* line 133, ../sass/screen.scss */
+.navTopBar div {
+  float: right;
+}
+
+/* line 137, ../sass/screen.scss */
+.optionsTop {
+  position: relative;
+  top: -13px;
+}
+
+/* line 142, ../sass/screen.scss */
+.option {
+  display: inline-block;
+  height: 50px;
+  width: 20%;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+  float: left;
+  @inlude border-radius(2px);
+}
+
+/* ------ Body ----- */
+/* line 154, ../sass/screen.scss */
+.bodyContainer {
+  padding: 20px 0;
+}
+
+/*------ Slider ----- */
+/* line 161, ../sass/screen.scss */
+div.slider {
+  height: 500px;
+  width: 65%;
+  float: left;
+}
+/* line 165, ../sass/screen.scss */
+div.slider .heroBig {
+  height: auto;
+  width: 100%;
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+/* ------ Buscar ----- */
+/* line 175, ../sass/screen.scss */
+div.busqueda {
+  height: 700px;
+  width: 35%;
+  background-color: #ed1b24;
+  float: right;
+  position: relative;
+  clear: right;
+  color: white;
+}
+
+/* line 186, ../sass/screen.scss */
+.title {
+  text-align: center;
+  padding-top: 10%;
+}
+
+/* line 191, ../sass/screen.scss */
+h2 {
+  font-size: 10vh;
+  font-family: BentonSans;
+  color: white;
+}
+
+/* line 197, ../sass/screen.scss */
+div.donde {
+  padding: 5%;
+}
+/* line 199, ../sass/screen.scss */
+div.donde label {
+  clear: right;
+}
+
+/* line 204, ../sass/screen.scss */
+.origen, .destino {
+  padding: 5% 0;
+}
+/* line 206, ../sass/screen.scss */
+.origen input, .destino input {
+  width: 80%;
+}
+/* line 209, ../sass/screen.scss */
+.origen label, .destino label {
+  display: block;
+}
+
+/* line 218, ../sass/screen.scss */
+.extras {
+  padding: 0 5% 10% 5%;
+  clear: both;
+}
+
+/* line 224, ../sass/screen.scss */
+.soloIda {
+  float: left;
+}
+
+/* line 229, ../sass/screen.scss */
+.flexibilidad {
+  float: right;
+}
+
+/* line 233, ../sass/screen.scss */
+.when {
+  padding: 10% 5%;
+}
+/* line 235, ../sass/screen.scss */
+.when div {
+  display: inline-block;
+}
+/* line 237, ../sass/screen.scss */
+.when div input {
+  width: 50%;
+}
+/* line 240, ../sass/screen.scss */
+.when div .salida {
+  float: left;
+}
+/* line 243, ../sass/screen.scss */
+.when div .vuelta {
+  float: right;
+}
+
+/* line 249, ../sass/screen.scss */
+.moreExtras {
+  text-align: center;
+}
+/* line 251, ../sass/screen.scss */
+.moreExtras div {
+  display: inline-block;
+  clear: both;
+}
+
+/* line 257, ../sass/screen.scss */
+.searchButton {
+  padding: 10%;
+}
+/* line 259, ../sass/screen.scss */
+.searchButton button {
+  background-color: violet;
+  color: white;
+}
+
+/* ------- Other Desinations ------ */
+/* line 269, ../sass/screen.scss */
+.origenDestino {
+  width: 65%;
+  height: 220px;
+  text-align: center;
+  float: left;
+  padding-bottom: 20px;
+}
+
+/* line 277, ../sass/screen.scss */
+.place {
+  background-color: green;
+  display: inline-block;
+  text-align: center;
+  float: left;
+  width: 25%;
+}
+/* line 283, ../sass/screen.scss */
+.place p {
+  font-family: 'BentonSans';
+  font-size: 10vh;
+}
+
+/* line 289, ../sass/screen.scss */
+#thor {
+  background-image: url("../images/heroes/thor.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 295, ../sass/screen.scss */
+#captainamerica {
+  background-image: url("../images/heroes/captainamerica.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 300, ../sass/screen.scss */
+#ironman {
+  background-image: url("../images/heroes/ironman.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 305, ../sass/screen.scss */
+#wolverine {
+  background-image: url("../images/heroes/wolverine.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* line 311, ../sass/screen.scss */
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
+}
+
+/*----- Empty div ------ */
+/* line 322, ../sass/screen.scss */
+div.empty {
+  height: 75px;
+  background-color: #ed1b24;
+  clear: both;
+}
+
+/*------ Footer ----- */
+/* line 330, ../sass/screen.scss */
+footer {
+  background-image: url("../images/footer.png");
+  background-size: 100%;
+  height: 100px;
+  clear: both;
+}
+
+/* line 337, ../sass/screen.scss */
+.seccions {
+  width: 80%;
+  background-color: #ffffff;
+  opacity: 0.5;
+  text-align: justify;
+}
+
+/* line 344, ../sass/screen.scss */
+.seccion {
+  display: inline-block;
+  vertical-align: top;
+  *display: inline;
+  zoom: 1;
+  opacity: 4;
+}
+
+/* line 353, ../sass/screen.scss */
+.socialMedia {
+  float: right;
+}

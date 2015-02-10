@@ -1,0 +1,10 @@
+body{
+	background-color:violet;
+}
+
+div.navTopBar,
+div.navBottomBar{
+	background-color:yellow;
+	height:50px;
+	width:800px;
+}
