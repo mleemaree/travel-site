@@ -5,11 +5,13 @@
 <link rel="stylesheet" href="stylesheets/screen.css">
 </head>
 <body>
-<header>
-	<div class="search row">
+	<div class="row">
+	<div class="search col-5">
 		<input type="search">
 		<button type="submit">
 	</div>
+</div>
+<header>
 	<nav role="navigation">
 		<div class="navTopBar row">
 			<img class="logo col-1" src="images/logo.png">
@@ -22,14 +24,11 @@
 			</ul>
 		</div>
 		<div class="navBottomBar row">
-			<div class="options col-5">
-				<div class="option"><img class="icono" id="myflight" src="images/iconos/myflight.png">My Flights</div>
-				<div class="option"><img class="icono" id="exit" src="images/iconos/check.png">Check In</div>
-				<div class="option"><img class="icono" id="exit" src="images/iconos/time.png">Flight Status</div>
-				<div class="option"><img class="icono" id="exit" src="images/iconos/change.png">Change Flight</div>
-				<div class="option"><img class="icono" id="exit" src="images/iconos/info.png">Flights Info</div>
-				<!--<span class="stretch"></span>-->
-			</div>
+				<div class="option col-1"><img class="icono" id="myflight" src="images/iconos/myflight.png"><span>My Flights</span></div>
+				<div class="option col-1"><img class="icono" id="exit" src="images/iconos/check.png"><span>Check In</span></div>
+				<div class="option col-1"><img class="icono" id="exit" src="images/iconos/time.png"><span>Flight Status</span></div>
+				<div class="option col-1"><img class="icono" id="exit" src="images/iconos/change.png"><span>Change Flight</span></div>
+				<div class="option col-1"><img class="icono" id="exit" src="images/iconos/info.png"><span>Flights Info</span></</div>
 		</div>
 	</nav>
 </header>
@@ -70,11 +69,11 @@
         		<div class="when form-control">
         			<div class="salida">
         				<label for="salida">Salida</label>
-        				<input type="date" id="salida" name="dates">
+        				<input type="date" class="date"id="salida" name="dates">
         			</div>
         			<div class="vuelta">
         				<label for="vuelta">Vuelta</label>
-        				<input type="date" id="vuelta" name="dates">
+        				<input type="date" class="date"id="vuelta" name="dates">
         			</div>
         		</div>
         		<div class="moreExtras form-control">
@@ -98,7 +97,7 @@
         			</div>
         		</div>
         		<div class="searchButton">
-        			<button type="submit" class="search" value="buscar">Buscar</button>
+        			<button type="submit" class="search" value="buscar"><span>Buscar</span></button>
         		</div>
         	</form>
         </div>
@@ -111,18 +110,18 @@
 			<div class="place" id="captainamerica">
 				<h4>Chicago</h4>
 				<p>$200</p>
-				<button type="submit">View</button>
+				<button type="submit"><span>View</span></button>
 			</div>
 
 			<div class="place" id="ironman">
 				<h4>Miami</h4>							
 				<p>$200</p>
-				<button type="submit" value="">View</button>
+				<button type="submit" value=""><span>View</span></button>
 			</div>
 			<div class="place" id="wolverine">
 				<h4>L.A.</h4>
 				<p>$200</p>							
-				<button type="submit">View</button>
+				<button type="submit"><span>View</span></button>
 			</div>
 			<!--<span class="stretch"></span>-->
 		</div>

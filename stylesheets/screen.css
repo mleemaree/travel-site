@@ -173,14 +173,24 @@ input {
   .col-3 {
     width: 100%;
   }
+
+  /* line 88, ../sass/screen.scss */
+  .col-4 {
+    width: 100%;
+  }
+
+  /* line 89, ../sass/screen.scss */
+  .col-5 {
+    width: 100%;
+  }
 }
 @media all and (max-width: 650px) {
-  /* line 91, ../sass/screen.scss */
+  /* line 93, ../sass/screen.scss */
   .col-1 {
     width: 50%;
   }
 
-  /* line 92, ../sass/screen.scss */
+  /* line 94, ../sass/screen.scss */
   .col-2,
   .col-3,
   .col-4,
@@ -189,21 +199,22 @@ input {
   }
 }
 /*----- Header ----- */
-/* line 100, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .search {
   position: relative;
-  clear: left;
+  clear: both;
   height: 30px;
+  width: auto;
   float: right;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 div.navTopBar,
 div.navBottomBar {
   height: 50px;
   width: auto;
 }
-/* line 111, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 div.navTopBar li,
 div.navBottomBar li {
   display: inline-block;
@@ -211,80 +222,78 @@ div.navBottomBar li {
   padding: 0 2%;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 .navTopBar {
   background-image: url("../images/header.png");
   background-size: 100%;
 }
 
-/* line 123, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .navBottomBar {
   background-color: #ed1b24;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #message {
   position: relative;
   top: 4px;
 }
 
-/* line 132, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .logo {
-  height: 50px;
+  height: 138%;
   width: auto;
   float: left;
-}
-
-/* line 138, ../sass/screen.scss */
-.icono {
-  padding-right: 2%;
   position: relative;
-  top: 14%;
+  bottom: 38%;
 }
 
 /* line 144, ../sass/screen.scss */
+.icono {
+  padding-right: 8%;
+}
+
+/* line 150, ../sass/screen.scss */
 .navTopBar div {
   float: right;
 }
 
-/* line 148, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .optionsTop {
   position: relative;
-  top: -21px;
+  top: 20%;
+  float: right;
 }
 
-/* line 153, ../sass/screen.scss */
-.options {
-  position: relative;
-  top: -26px;
-}
-
-/* line 158, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 .option {
-  display: inline-block;
-  height: 50px;
+  display: table-cell;
+  height: 5%;
   width: 20%;
   color: #ffffff;
   text-align: center;
   margin: 0;
   float: left;
   @inlude border-radius(2px);
+  vertical-align: middle;
+  position: relative;
+  top: -22%;
 }
 
 /* ------ Body ----- */
-/* line 170, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .bodyContainer {
   padding: 20px 0;
 }
 
 /*------ Slider ----- */
-/* line 177, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 div.slider {
   height: 500px;
   width: 65%;
   float: left;
 }
-/* line 181, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 div.slider .heroBig {
   height: auto;
   width: 100%;
@@ -292,14 +301,14 @@ div.slider .heroBig {
   margin: 0 auto;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
 #spiderman {
   height: auto;
   width: 167%;
 }
 
 /* ------ Buscar ----- */
-/* line 196, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 div.busqueda {
   height: 700px;
   width: 35%;
@@ -310,151 +319,204 @@ div.busqueda {
   color: white;
 }
 
-/* line 207, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .title {
   text-align: center;
   padding-top: 10%;
 }
 
-/* line 212, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 h2 {
   font-size: 10vh;
   font-family: BentonSans;
   color: white;
 }
 
-/* line 218, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 div.donde {
   padding: 5%;
 }
-/* line 220, ../sass/screen.scss */
+/* line 227, ../sass/screen.scss */
 div.donde label {
   clear: right;
 }
 
-/* line 225, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .origen, .destino {
   padding: 5% 0;
 }
-/* line 227, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .origen input, .destino input {
   width: 80%;
 }
-/* line 230, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 .origen label, .destino label {
   display: block;
 }
 
-/* line 239, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .extras {
   padding: 0 5% 10% 5%;
   clear: both;
 }
 
-/* line 245, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .soloIda {
   float: left;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .flexibilidad {
   float: right;
 }
 
-/* line 254, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .when {
   padding: 10% 5%;
 }
-/* line 256, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .when div {
   display: inline-block;
 }
-/* line 258, ../sass/screen.scss */
+/* line 265, ../sass/screen.scss */
 .when div input {
   width: 50%;
 }
-/* line 261, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .when div .salida {
   float: left;
 }
-/* line 264, ../sass/screen.scss */
+/* line 271, ../sass/screen.scss */
 .when div .vuelta {
   float: right;
 }
 
-/* line 270, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 .moreExtras {
   text-align: center;
 }
-/* line 272, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .moreExtras div {
   display: inline-block;
   clear: both;
+  padding: 2%;
 }
 
-/* line 278, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
+select {
+  background-color: white;
+  border: 1px solide #fdf101;
+  border-style: none;
+  border-radius: 1px;
+  height: 22px;
+  display: inline;
+  vertical-align: middle;
+}
+
+/* line 295, ../sass/screen.scss */
+.date {
+  margin: 5%;
+  display: inline;
+  vertical-align: middle;
+}
+
+/* line 301, ../sass/screen.scss */
 .searchButton {
   padding: 10%;
 }
-/* line 280, ../sass/screen.scss */
+/* line 303, ../sass/screen.scss */
 .searchButton button {
-  background-color: violet;
-  color: white;
+  background-color: white;
+  color: black;
+  border: 4px solid #fdf101;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-family: 'VTC Letterer Pro Regular';
+  font-size: 1em;
+}
+/* line 311, ../sass/screen.scss */
+.searchButton span {
+  padding: 8%;
 }
 
 /* ------- Other Desinations ------ */
-/* line 290, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 .origenDestino {
   width: 65%;
   height: 220px;
   text-align: center;
   float: left;
   padding-bottom: 20px;
+  position: relative;
+  bottom: 10%;
+}
+/* line 328, ../sass/screen.scss */
+.origenDestino button {
+  background-color: white;
+  color: black;
+  border: 4px solid #fdf101;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-family: 'VTC Letterer Pro Regular';
+  font-size: 1em;
+}
+/* line 336, ../sass/screen.scss */
+.origenDestino span {
+  padding: 8%;
 }
 
-/* line 298, ../sass/screen.scss */
+/* line 341, ../sass/screen.scss */
 .place {
-  background-color: green;
-  display: inline-block;
+  display: inline;
+  vertical-align: center;
   text-align: center;
   float: left;
   width: 25%;
 }
-/* line 304, ../sass/screen.scss */
+/* line 347, ../sass/screen.scss */
+.place h4 {
+  font-size: 2em;
+}
+/* line 350, ../sass/screen.scss */
 .place p {
   font-family: 'BentonSans';
   font-size: 10vh;
+  color: white;
+  padding: 12%;
+  text-shadow: 0.1em 0.1em #000;
 }
 
-/* line 310, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
 #thor {
   background-image: url("../images/heroes/thor.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 316, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 #captainamerica {
   background-image: url("../images/heroes/captainamerica.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 321, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 #ironman {
   background-image: url("../images/heroes/ironman.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 326, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 #wolverine {
   background-image: url("../images/heroes/wolverine.png");
   background-size: 100%;
   background-repeat: no-repeat;
 }
 
-/* line 332, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .stretch {
   width: 100%;
   display: inline-block;
@@ -463,7 +525,7 @@ div.donde label {
 }
 
 /*----- Empty div ------ */
-/* line 343, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 div.empty {
   height: 75px;
   background-color: #ed1b24;
@@ -471,7 +533,7 @@ div.empty {
 }
 
 /*------ Footer ----- */
-/* line 351, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 footer {
   background-image: url("../images/footer.png");
   background-size: 100%;
@@ -479,7 +541,7 @@ footer {
   clear: both;
 }
 
-/* line 358, ../sass/screen.scss */
+/* line 407, ../sass/screen.scss */
 .seccions {
   width: 80%;
   background-color: #ffffff;
@@ -487,7 +549,7 @@ footer {
   text-align: justify;
 }
 
-/* line 365, ../sass/screen.scss */
+/* line 414, ../sass/screen.scss */
 .seccion {
   display: inline-block;
   vertical-align: top;
@@ -496,7 +558,7 @@ footer {
   opacity: 4;
 }
 
-/* line 374, ../sass/screen.scss */
+/* line 423, ../sass/screen.scss */
 .socialMedia {
   float: right;
 }
